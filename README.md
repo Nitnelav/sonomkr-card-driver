@@ -11,12 +11,17 @@
 
 *arch/arm/boot/dts/overlays/Makefile*
 
-- add the following line :
+- add the following line (for 4.9 kernel) :
 
 ```
 sonomkr-card.dtbo \
 ```
 
+- or the following line (for 4.4 kernel) :
+
+```
+dtbo-$(RPI_DT_OVERLAYS) += sonomkr-card.dtbo
+```
 
 ### 3. add sonomkr as a vendor in :
 
